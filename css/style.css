@@ -3,3 +3,31 @@
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
+
+
+/*------------------------------ HEADER ------------------------------*/
+
+nav{
+    padding: 1em;
+    background-color: #F5F2EB;
+}
+
+nav ul {
+    padding: 0;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav img{
+    width: auto;
+    height: 8vh;
+    margin: 1em;
+}
