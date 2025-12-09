@@ -7,27 +7,41 @@
 
 /*------------------------------ HEADER ------------------------------*/
 
-nav{
-    padding: 1em;
+header{
     background-color: #F5F2EB;
 }
 
-nav ul {
-    padding: 0;
-    float: right;
+nav{
+    padding: 1em 2em;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
 }
 
-nav li {
-    display: inline-block;
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 nav img{
     width: auto;
     height: 8vh;
     margin: 1em;
+}
+
+.headerkurv{
+    font-size: 35px;
+    color: #A51E23;
+    padding: 2em;
 }
