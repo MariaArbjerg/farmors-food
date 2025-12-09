@@ -29,14 +29,22 @@ nav ul {
     font-weight: 600;
 }
 
+nav li{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
 nav li a:hover{
-    text-decoration: underline;
+    color: #A51E23;
 }
 
 nav a {
     text-decoration: none;
     color: black;
     font-size: 25px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease;
 }
 
 nav img{
@@ -48,5 +56,16 @@ nav img{
 .headerkurv{
     font-size: 35px;
     color: #A51E23;
-    padding: 2em;
+    padding: 1em;
 }
+
+.headerkurv:hover{
+    -webkit-text-stroke: 1.5px black;
+    font-size: 60px;
+}
+
+.denneside{ /* Når vi er på den specifikke HTML side, ser menupunktet sådan ud (brødkrummer) */
+    text-decoration: underline;
+}
+
+/*------------------------------SLUT HEADER SLUT------------------------------*/
