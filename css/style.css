@@ -1,4 +1,71 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+
+/*------------------------------ HEADER ------------------------------*/
+
+header{
+    background-color: #F5F2EB;
+}
+
+nav{
+    padding: 0em 2em;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+nav li{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+nav li a:hover{
+    color: #A51E23;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease;
+}
+
+nav img{
+    width: auto;
+    height: 8vh;
+    margin: 1em;
+}
+
+.headerkurv{
+    font-size: 35px;
+    color: #A51E23;
+    padding: 1em;
+}
+
+.headerkurv:hover{
+    -webkit-text-stroke: 1.5px black;
+    font-size: 60px;
+}
+
+.denneside{ /* Når vi er på den specifikke HTML side, ser menupunktet sådan ud (brødkrummer) */
+    text-decoration: underline;
+}
+
+/*------------------------------SLUT HEADER SLUT------------------------------*/
