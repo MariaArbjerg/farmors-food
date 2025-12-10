@@ -73,3 +73,52 @@ nav img{
 
 /* ----------------------------- FOOTER ----------------------------- */
 
+footer{
+    background-color: #ECB1B1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 40% 30%;
+}
+
+footer h6{
+    font-size: 25px;
+}
+
+footer img {
+    max-width:3000px;
+    width: 100%
+}
+
+.f1{
+    grid-column: 1;
+}
+
+.f2{
+    grid-column: 2;
+}
+
+.f3{
+    grid-column: 3;
+}
+
+.some{
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: center;
+    font-size: 30px;
+}
+
+.some a{
+    padding: 2em;
+}
+
+.footerbottom{
+    background-color: #A51E23;
+    color: #F5F2EB;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 20px;
+    padding: 0.7em;
+    grid-column: 1 / span4;
+}
