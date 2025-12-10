@@ -82,6 +82,7 @@ footer{
 
 footer h6{
     font-size: 25px;
+    padding-bottom: 10px;
 }
 
 footer img {
@@ -107,6 +108,9 @@ footer a{
     list-style-type: none;
 }
 
+.f1 i{
+    padding-right: 30px;
+}
 .f2{
     grid-column: 2; 
 }
