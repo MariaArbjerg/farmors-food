@@ -55,12 +55,12 @@ nav img{
 
 .headerkurv{
     font-size: 35px;
-    color: #A51E23;
+    color: #000000;
     padding: 1em;
 }
 
 .headerkurv:hover{
-    text-shadow: 1px 1px 2px black;
+    color: #A51E23;
     transition: 0.3s;
 }
 
@@ -69,6 +69,72 @@ nav img{
 }
 
 /*------------------------------SLUT HEADER SLUT------------------------------*/
+
+
+
+/* Hero slider */
+.horisontal{
+    padding: 1em 0;
+}
+
+.scrollhero{
+    overflow-x: scroll; /* Håndtere scroll på x linjen (horisontalt) */
+    width: 100%;
+    display: flex; /* Så kommer billederne op ved siden af hinanden */
+    gap: 1em; /* Giver lidt luft mellem billederne */
+}
+
+.scrollhero img{
+    width: 70vw;
+    height: auto;
+}
+
+/* -------------- Menu sektion m. slider -------------- */
+
+input[type="radio"] {
+    display: none;
+}
+
+.menutabs{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menutabs label{
+    padding: 0.7rem 1.4rem;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.menutabs label:hover{
+    background-color: #949494;
+}
+
+#polse:checked ~ .menutabs label[for="polse"], #suppe:checked ~ .menutabs label[for="suppe"], #tilbehor:checked ~ .menutabs label[for="tilbehor"]{
+    background-color: #A51E23;
+    color: #F5F2EB;
+}
+
+.menuslider{
+    display: none;
+    gap: 1rem;
+    overflow-x: auto;
+}
+
+#polse:checked ~ .menucontent .polse{
+    display: flex;
+}
+
+#suppe:checked ~ .menucontent .suppe{
+    display: flex;
+}
+
+#tilbehor:checked ~ .menucontent .tilbehor{
+    display: flex;
+}
+/*--------------------------------------------------------------------*/
 
 
 /* ----------------------------- FOOTER ----------------------------- */
@@ -147,6 +213,8 @@ footer a{
     cursor: pointer;
 
 }
+
+/* Newsletter slut */
 
 .some{
     grid-column: 1 / -1;
