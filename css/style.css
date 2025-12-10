@@ -74,7 +74,7 @@ nav img{
 /* ----------------------------- FOOTER ----------------------------- */
 
 footer{
-    background-color: #ECB1B1;
+    background-color: #F5F2EB;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30% 40% 30%;
@@ -110,6 +110,8 @@ footer img {
 
 .some a{
     padding: 2em;
+    color: #A51E23;
+    text-decoration: none;
 }
 
 .footerbottom{
