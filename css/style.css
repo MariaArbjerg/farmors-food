@@ -91,12 +91,19 @@ nav img{
 
 /* -------------- Menu sektion m. slider -------------- */
 
+.menusektion{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
 input[type="radio"] {
     display: none;
 }
 
 .menutabs{
     display: flex;
+    justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -121,6 +128,12 @@ input[type="radio"] {
     display: none;
     gap: 1rem;
     overflow-x: auto;
+    justify-content: center;
+}
+
+.menucontent {
+    display: flex;
+    justify-content: center;
 }
 
 #polse:checked ~ .menucontent .polse{
