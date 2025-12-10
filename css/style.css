@@ -60,8 +60,8 @@ nav img{
 }
 
 .headerkurv:hover{
-    -webkit-text-stroke: 1.5px black;
-    font-size: 60px;
+    text-shadow: 1px 1px 2px black;
+    transition: 0.3s;
 }
 
 .denneside{ /* Når vi er på den specifikke HTML side, ser menupunktet sådan ud (brødkrummer) */
@@ -69,3 +69,106 @@ nav img{
 }
 
 /*------------------------------SLUT HEADER SLUT------------------------------*/
+
+
+/* ----------------------------- FOOTER ----------------------------- */
+
+footer{
+    background-color: #F5F2EB;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+}
+
+footer h6{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+footer img {
+    max-width:1500px;
+    width: 100%;
+    max-height: 100%;
+    grid-column: 1 / span4;
+    grid-row: 1;
+    padding: 2em;
+    place-self: center;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+.f1{
+    grid-column: 1;
+}
+
+.f1 li {
+    list-style-type: none;
+}
+
+.f1 i{
+    padding-right: 30px;
+}
+.f2{
+    grid-column: 2; 
+}
+
+.f3{
+    grid-column: 3;
+}
+
+.f1, .f2, .f3{
+    grid-row: 2;
+    place-self: center;
+    line-height: 1.5em;
+}
+
+/* Styling af nyhedsbrevs opskrivning */
+
+.newsletter {
+    border-radius: 15px;
+}
+.newsletter input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background: #A51E23;
+    border-radius: 25px;
+    color: #F5F2EB;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.some{
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: center;
+    font-size: 30px;
+    padding: 2em;
+}
+
+.some a{
+    padding: 2em;
+    color: #A51E23;
+    text-decoration: none;
+}
+
+.footerbottom{
+    background-color: #A51E23;
+    color: #F5F2EB;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 20px;
+    padding: 0.7em;
+    grid-column: 1 / span4;
+}
