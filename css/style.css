@@ -55,12 +55,12 @@ nav img{
 
 .headerkurv{
     font-size: 35px;
-    color: #A51E23;
+    color: #000000;
     padding: 1em;
 }
 
 .headerkurv:hover{
-    text-shadow: 1px 1px 2px black;
+    color: #A51E23;
     transition: 0.3s;
 }
 
@@ -89,7 +89,8 @@ nav img{
     height: auto;
 }
 
-/* Menu sektion m. slider */
+/* -------------- Menu sektion m. slider -------------- */
+
 input[type="radio"] {
     display: none;
 }
@@ -107,8 +108,13 @@ input[type="radio"] {
     cursor: pointer;
 }
 
+.menutabs label:hover{
+    background-color: #949494;
+}
+
 #polse:checked ~ .menutabs label[for="polse"], #suppe:checked ~ .menutabs label[for="suppe"], #tilbehor:checked ~ .menutabs label[for="tilbehor"]{
     background-color: #A51E23;
+    color: #F5F2EB;
 }
 
 .menuslider{
@@ -128,7 +134,7 @@ input[type="radio"] {
 #tilbehor:checked ~ .menucontent .tilbehor{
     display: flex;
 }
-
+/*--------------------------------------------------------------------*/
 
 
 /* ----------------------------- FOOTER ----------------------------- */
