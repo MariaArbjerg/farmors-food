@@ -173,7 +173,6 @@ input[type="radio"] {
     grid-template-rows: auto auto;
     text-align: center;
     margin: 1em 1em;
-    
 }
 
 .box img{
@@ -196,9 +195,40 @@ input[type="radio"] {
     font-size: 31px;
     transition: 0.2s ease;
 }
+
+.seflereknap{
+    flex-basis: 100%;
+    display: block;
+    margin-top: 20px;
+}
 /*--------------------------------------------------------------------*/
 
+/* OM OS SEKTIONEN */
+.f-omossektion{
+    background-color: #F5F2EB;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 3em 0;
+}
 
+.h5p{
+    padding-top: 10em;
+    max-width: 100em;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.f-omossektion p{
+    font-size: 30px;
+}
+
+.f-omossektion img{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   height: 700px;
+}
 /* ----------------------------- FOOTER ----------------------------- */
 
 footer{
