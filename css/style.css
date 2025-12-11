@@ -258,6 +258,7 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
     font-size: 30px;
+    padding-top: 10em;
 }
 
 footer h6{
