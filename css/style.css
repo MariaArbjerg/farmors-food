@@ -335,12 +335,12 @@ footer a{
     grid-column: 1 / -1;
     grid-row: 3;
     justify-self: center;
-    font-size: 50px;
-    padding: 2em;
+    font-size: 60px;
+    padding: 1.7em;
 }
 
 .some a{
-    padding: 2em;
+    padding: 1.5em;
     color: #A51E23;
     text-decoration: none;
 }
