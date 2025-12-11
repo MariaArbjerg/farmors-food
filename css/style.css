@@ -74,6 +74,7 @@ nav img{
 
 .headerkurv:hover{
     color: #A51E23;
+    font-size: 66px;
     transition: 0.3s;
 }
 
@@ -88,6 +89,7 @@ nav img{
 /* Hero slider */
 .horisontal{
     padding: 1em 0;
+    background-color: #F5F2EB;
 }
 
 .scrollhero{
@@ -105,9 +107,10 @@ nav img{
 /* -------------- Menu sektion m. slider -------------- */
 
 .menusektion{
-    max-width: 1100px;
+    
     margin: 0 auto;
     padding: 2rem 1rem;
+    background-color: #F5F2EB;
 }
 
 input[type="radio"] {
@@ -150,6 +153,7 @@ input[type="radio"] {
 .menucontent {
     display: flex;
     justify-content: center;
+    
 }
 
 #polse:checked ~ .menucontent .polse{
@@ -162,6 +166,35 @@ input[type="radio"] {
 
 #tilbehor:checked ~ .menucontent .tilbehor{
     display: flex;
+}
+
+.box{
+    display: grid;
+    grid-template-rows: auto auto;
+    text-align: center;
+    margin: 1em 1em;
+    
+}
+
+.box img{
+    width: auto;
+    height: 300px;
+    margin-top: 0.5em;
+    border-radius: 15px;
+}
+
+.box a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    margin: 0.5em;
+}
+
+.box a:hover{
+    color: #A51E23;
+    font-size: 31px;
+    transition: 0.2s ease;
 }
 /*--------------------------------------------------------------------*/
 
