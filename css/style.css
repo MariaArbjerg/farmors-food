@@ -172,7 +172,7 @@ input[type="radio"] {
     display: grid;
     grid-template-rows: auto auto;
     text-align: center;
-    margin: 1em 1em;
+    margin: 1em 0em;
 }
 
 .box img{
@@ -216,7 +216,28 @@ input[type="radio"] {
     padding-top: 10em;
     max-width: 100em;
     text-align: left;
-    margin: 0 auto;
+}
+
+.h5p p{
+    line-height: 1.5em;
+}
+
+.h5ptext{
+    margin-bottom: 2em;
+}
+
+.f-omossektion a{
+    text-decoration: none;
+    color: #000000;
+    background-color: #d9d9d9;
+    font-size: 35px;
+    border-radius: 40px;
+    padding: 0.5em 1em;
+}
+
+.f-omossektion a:hover{
+    background-color: #949494;
+    transition: 0.3s;
 }
 
 .f-omossektion p{
