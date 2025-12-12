@@ -55,7 +55,7 @@ nav li a:hover{
 nav a {
     text-decoration: none;
     color: black;
-    font-size: 50px;
+    font-size: 30px;
     border-bottom: 2px solid transparent;
     transition: color 0.2s ease;
 }
@@ -67,14 +67,14 @@ nav img{
 }
 
 .headerkurv{
-    font-size: 65px;
+    font-size: 59px;
     color: #000000;
     padding: 1em;
 }
 
 .headerkurv:hover{
     color: #A51E23;
-    font-size: 66px;
+    font-size: 60px;
     transition: 0.3s;
 }
 
@@ -156,6 +156,12 @@ input[type="radio"] {
     
 }
 
+.menufooter{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
 #polse:checked ~ .menucontent .polse{
     display: flex;
 }
@@ -197,10 +203,23 @@ input[type="radio"] {
 }
 
 .seflereknap{
-    flex-basis: 100%;
     display: block;
+    flex-wrap: wrap;
     margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    font-size: 30px;
 }
+
+.seflereknap:hover{
+    background-color: #949494;
+    transition: 0.2s ease;
+}
+
 /*--------------------------------------------------------------------*/
 
 /* OM OS SEKTIONEN */
@@ -250,6 +269,7 @@ input[type="radio"] {
    bottom: 0;
    height: 700px;
 }
+
 /* ----------------------------- FOOTER ----------------------------- */
 
 footer{
