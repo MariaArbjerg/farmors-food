@@ -29,10 +29,11 @@
     </nav>
 </header>
 <!--------------------------------------- HEADER SLUT --------------------------------------->
+
 <main>
 
 <!-- Hero Billede-->
- <img class="f-hero" src="img/hero 1.png" alt="Hero billede: Billede af lækre krydderurter på et skærebræt">
+ <img class="f-hero" src="img/hero1.png" alt="Hero billede: Billede af lækre krydderurter på et skærebræt">
    
 
 <!-- Menu sektion m. slider + radiobuttons (som skal skjules) -->
@@ -53,32 +54,32 @@
             <div class="menuslider polse"> <!-- PØLSE KATAGORI -->
                 <div class="box">
                     <a href="#">
-                        <p>Medisterpølse</p>
                         <img src="img/billede medister ny1 (1).png" alt="Medisterpølse">
+                        <p>Medisterpølse</p> 
                     </a>
                 </div>
                  <div class="box">
                     <a href="#">
-                        <p>Kyllingepølse</p>
                         <img src="img/chicken-meat-sausage-1711367255677.jpg" alt="Kyllingepølse">
+                        <p>Kyllingepølse</p>
                     </a>
                 </div>
                 <div class="box">
                     <a href="#">
-                        <p>Brunchpølse</p>
                         <img src="img/brunch-pølser-1711450497548.jpg" alt="Brunchpølser">
+                        <p>Brunchpølse</p>
                     </a>
                 </div>
                 <div class="box">
                     <a href="#">
-                        <p>Ostepølse</p>
                         <img src="img/cheese-sausage-1711367305863.jpg" alt="Ostepølse">
+                        <p>Ostepølse</p>
                     </a>
                 </div>
                 <div class="box">
                     <a href="#">
-                        <p>Farmors griller</p>
                         <img src="img/farmors-griller-1711366923602 (1).jpg" alt="Farmors griller">
+                        <p>Farmors griller</p>
                     </a>
                 </div>
             </div>
@@ -113,14 +114,14 @@
 
         </div>
 
-        <div class="menufooter">
+        <div class="menuss">
             <a id="polse-cta" class="seflereknap" href="#">Se flere pølser</a>
         </div>
 
     </section>
 
 
-    <!------------ OM OS SEKTIONEN ------------>
+<!------------ OM OS SEKTIONEN ------------>
     <section class="f-omossektion">
         <div class="h5p">
             <div class="h5ptext">
@@ -133,6 +134,7 @@
     </section>
 
 </main>
+
 <!--------------------------------------- FOOTER --------------------------------------->
 <footer>
     <img src="img/footerpoelsekaedemedlogo2.png" alt="Farmors Food logo">
@@ -173,48 +175,6 @@
     </section>
 </footer>
 <!--------------------------------------- FOOTER SLUT --------------------------------------->
-<script>
-    (function(){
-        const logEndpoint = 'http://127.0.0.1:7242/ingest/f10a6b99-b670-4b4b-9ba1-d257f54551ed';
-        const sessionId = 'debug-session';
-        const runId = 'run1';
-        const polseBtn = document.getElementById('polse-cta');
-        const radios = document.querySelectorAll('input[name="menu"]');
 
-        function sendLog(hypothesisId, location, message, data){
-            // #region agent log
-            fetch(logEndpoint,{
-                method:'POST',
-                headers:{'Content-Type':'application/json'},
-                body:JSON.stringify({
-                    sessionId,
-                    runId,
-                    hypothesisId,
-                    location,
-                    message,
-                    data,
-                    timestamp:Date.now()
-                })
-            }).catch(()=>{});
-            // #endregion
-        }
-
-        sendLog('H1','index.html:init','menu script init',{radiosCount:radios.length, polseBtnPresent:!!polseBtn});
-
-        function syncCTA(source){
-            const selected = document.querySelector('input[name="menu"]:checked');
-            const selectedId = selected ? selected.id : null;
-            const isPolse = selectedId === 'polse';
-            sendLog('H2','index.html:syncCTA','before apply',{source, selectedId, isPolse});
-            if(polseBtn){
-                polseBtn.style.display = isPolse ? 'inline-block' : 'none';
-            }
-            sendLog('H3','index.html:syncCTA','after apply',{source, display: polseBtn ? polseBtn.style.display : null});
-        }
-
-        radios.forEach(r => r.addEventListener('change', () => syncCTA('change')));
-        syncCTA('init');
-    })();
-</script>
 </body>
 </html>

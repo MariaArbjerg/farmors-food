@@ -16,7 +16,7 @@
 
 .h1, h2, h3, h4, h5, h6{
     font-family: "rylan", sans-serif;
-    font-size: 35px;
+    font-size: 18px;
 }
 
 header{
@@ -33,16 +33,15 @@ nav{
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 6em;
+    gap: 3em;
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 40px;
     font-weight: 600;
 }
 
 nav li{
-    height: 40px;
+    height: 10px;
     display: flex;
     align-items: center;
 }
@@ -55,26 +54,26 @@ nav li a:hover{
 nav a {
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: 18px;
     border-bottom: 2px solid transparent;
     transition: color 0.2s ease;
 }
 
 nav img{
     width: auto;
-    height: 8vh;
+    height: 60px;
     margin: 1em;
 }
 
 .headerkurv{
-    font-size: 59px;
+    font-size: 30px;
     color: #000000;
     padding: 1em;
 }
 
 .headerkurv:hover{
     color: #A51E23;
-    font-size: 60px;
+    font-size: 31px;
     transition: 0.3s;
 }
 
@@ -109,7 +108,7 @@ input[type="radio"] {
     justify-content: center;
     gap: 3rem;
     margin-bottom: 2rem;
-    font-size: 35px;
+    font-size: 18px;
 }
 
 .menutabs label{
@@ -134,7 +133,7 @@ input[type="radio"] {
     gap: 1rem;
     overflow-x: auto;
     justify-content: center;
-    font-size: 30px;
+    font-size: 16px;
 }
 
 .menucontent {
@@ -143,7 +142,7 @@ input[type="radio"] {
     
 }
 
-.menufooter{
+.menuss{
     display: flex;
     justify-content: center;
     margin-top: 1rem;
@@ -170,8 +169,7 @@ input[type="radio"] {
 
 .box img{
     width: auto;
-    height: 300px;
-    margin-top: 0.5em;
+    height: 150px;
     border-radius: 15px;
 }
 
@@ -180,26 +178,26 @@ input[type="radio"] {
     font-weight: 500;
     color: black;
     cursor: pointer;
-    margin: 0.5em;
+    
 }
 
 .box a:hover{
     color: #A51E23;
-    font-size: 31px;
+    font-size: 16px;
     transition: 0.2s ease;
 }
 
 .seflereknap{
     display: block;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     text-decoration: none;
     color: black;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
     background-color: #d9d9d9;
     border-radius: 30px;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .seflereknap:hover{
@@ -220,7 +218,7 @@ input[type="radio"] {
 
 .h5p{
     padding-top: 10em;
-    max-width: 100em;
+    max-width: 70%;
     text-align: left;
 }
 
@@ -236,7 +234,7 @@ input[type="radio"] {
     text-decoration: none;
     color: #000000;
     background-color: #d9d9d9;
-    font-size: 35px;
+    font-size: 15px;
     border-radius: 40px;
     padding: 0.5em 1em;
 }
@@ -247,14 +245,14 @@ input[type="radio"] {
 }
 
 .f-omossektion p{
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .f-omossektion img{
    position: absolute;
    right: 0;
    bottom: 0;
-   height: 700px;
+   height: 350px;
 }
 
 /* ----------------------------- FOOTER ----------------------------- */
@@ -264,8 +262,8 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
-    font-size: 30px;
-    padding-top: 10em;
+    font-size: 18px;
+    padding-top: 5em;
 }
 
 footer h6{
@@ -317,11 +315,11 @@ footer a{
 
 .newsletter {
     border-radius: 15px;
-    font-size: 30px;
+    font-size: 18px;
 }
 .newsletter input {
     padding: 10px;
-    font-size: 30px;
+    font-size: 15px;
     border: none;
     border-radius: 15px;
 }
@@ -331,7 +329,7 @@ footer a{
     background: #A51E23;
     border-radius: 25px;
     color: #F5F2EB;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
 
@@ -343,7 +341,7 @@ footer a{
     grid-column: 1 / -1;
     grid-row: 3;
     justify-self: center;
-    font-size: 60px;
+    font-size: 30px;
     padding: 1.7em;
 }
 
@@ -359,7 +357,7 @@ footer a{
     display: flex;
     justify-content: center;
     gap: 2em;
-    font-size: 30px;
+    font-size: 20px;
     padding: 0.7em;
     grid-column: 1 / span4;
 }
