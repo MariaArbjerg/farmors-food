@@ -1,6 +1,0 @@
-{"sessionId":"debug-session","runId":"run1","hypothesisId":"H1","location":"index.html:init","message":"menu script init","data":{"radiosCount":3,"polseBtnPresent":true},"timestamp":1765525814646}
-{"sessionId":"debug-session","runId":"run1","hypothesisId":"H2","location":"index.html:syncCTA","message":"before apply","data":{"source":"init","selectedId":"polse","isPolse":true},"timestamp":1765525814648}
-{"sessionId":"debug-session","runId":"run1","hypothesisId":"H3","location":"index.html:syncCTA","message":"after apply","data":{"source":"init","display":"inline-block"},"timestamp":1765525814649}
-{"sessionId":"debug-session","runId":"run1","hypothesisId":"H1","location":"index.html:init","message":"menu script init","data":{"radiosCount":3,"polseBtnPresent":true},"timestamp":1765525826755}
-{"sessionId":"debug-session","runId":"run1","hypothesisId":"H2","location":"index.html:syncCTA","message":"before apply","data":{"source":"init","selectedId":"polse","isPolse":true},"timestamp":1765525826756}
-{"sessionId":"debug-session","runId":"run1","hypothesisId":"H3","location":"index.html:syncCTA","message":"after apply","data":{"source":"init","display":"inline-block"},"timestamp":1765525826757}

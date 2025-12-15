@@ -85,23 +85,10 @@ nav img{
 /*------------------------------SLUT HEADER SLUT------------------------------*/
 
 
-
-/* Hero slider */
-.horisontal{
-    padding: 1em 0;
-    background-color: #F5F2EB;
-}
-
-.scrollhero{
-    overflow-x: scroll; /* Håndtere scroll på x linjen (horisontalt) */
+/* HERO billede */
+.f-hero{
     width: 100%;
-    display: flex; /* Så kommer billederne op ved siden af hinanden */
-    gap: 1em; /* Giver lidt luft mellem billederne */
-}
-
-.scrollhero img{
-    width: auto;
-    height: 40vh;
+    height: auto;
 }
 
 /* -------------- Menu sektion m. slider -------------- */
