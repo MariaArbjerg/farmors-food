@@ -304,8 +304,8 @@ input[type="radio"] {
     display: inline-block;
 }
 
-.standout p:last-child{
-    margin-bottom: 10rem;
+.lastp{
+    padding-top: 2rem;
 }
 
 .standout a:hover{
