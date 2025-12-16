@@ -207,6 +207,22 @@ input[type="radio"] {
 
 /*--------------------------------------------------------------------*/
 
+/* VÆRDIER SEKTIONEN */
+.f-vaerdiersektion{
+    background-color: #F3E2DE;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 3em 0;
+}
+.f-vaerdiersektion img{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   height: 350px;
+}
+
+
 /* OM OS SEKTIONEN */
 .f-omossektion{
     background-color: #F5F2EB;
@@ -246,13 +262,6 @@ input[type="radio"] {
 
 .f-omossektion p{
     font-size: 18px;
-}
-
-.f-omossektion img{
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   height: 350px;
 }
 
 /* ----------------------------- FOOTER ----------------------------- */
