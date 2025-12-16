@@ -364,7 +364,7 @@ input[type="radio"] {
     text-decoration: none;
     color: #000000;
     background-color: #d9d9d9;
-    font-size: 15px;
+    font-size: 20px;
     border-radius: 40px;
     padding: 0.5em 1em;
 }
@@ -451,7 +451,7 @@ footer a{
     background: #A51E23;
     border-radius: 25px;
     color: #F5F2EB;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
 
