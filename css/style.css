@@ -227,23 +227,24 @@ input[type="radio"] {
 .f-omossektion{
     background-color: #F5F2EB;
     display: flex;
-    justify-content: center;
-    position: relative;
-    padding: 3em 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4em;
+    padding: 4rem 6rem;;
 }
 
 .h5p{
-    padding-top: 10em;
-    max-width: 70%;
+    width: 50%;
     text-align: left;
 }
 
 .h5p p{
-    line-height: 1.5em;
+    line-height: 1.6;
+    font-size: 18px;
 }
 
 .h5ptext{
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 .f-omossektion a{
@@ -264,6 +265,12 @@ input[type="radio"] {
     font-size: 18px;
 }
 
+.f-omossektion img{
+   width: 40%;
+   height: auto;
+   max-width: 400px;
+
+}
 /* ----------------------------- FOOTER ----------------------------- */
 
 footer{
