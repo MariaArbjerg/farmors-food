@@ -118,6 +118,7 @@ input[type="radio"] {
     background-color: #D9D9D9;
     border-radius: 30px;
     cursor: pointer;
+    font-family: "rylan", sans-serif;
 }
 
 .menutabs label:hover{
@@ -196,7 +197,7 @@ input[type="radio"] {
     text-align: center;
     text-decoration: none;
     color: black;
-    padding: 0.3rem 1rem;
+    padding: 0.7rem 1rem;
     background-color: #d9d9d9;
     border-radius: 30px;
     font-size: 22px;
@@ -248,7 +249,83 @@ input[type="radio"] {
     height: auto;
     max-width: 400px;
 }
+
+
+
+
+
 /* JULETILBUD + EVENTS */
+.standout{
+    background: #A51E23;
+    padding: 20px 0;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.standout > div{
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    gap: 60px;
+}
+
+.standout img{
+    width: 30rem;
+    height: auto;
+    border-radius: 20px;
+}
+
+.eventbillede{
+    grid-column: 1;
+    grid-row: 2;
+    place-self: center;
+}
+
+.juletilbudbillede{
+    grid-column: 2;
+    grid-row: 1;
+    place-self: left;
+}
+
+.standout a{
+    text-decoration: none;
+    color: #A51E23;
+    background-color: #F5F2EB;
+    font-size: 20px;
+    border-radius: 40px;
+    padding: 0.7em 1.5em;
+    font-weight: 600;
+}
+
+.f-events-tekst a, .juletilbud a{
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.standout p:last-child{
+    margin-bottom: 10rem;
+}
+
+.standout a:hover{
+    background-color: #949494;
+    color: black;
+    transition: 0.3s;
+}
+
+.juletilbud h1, h2{
+    font-family: "rylan", sans-serif;
+    font-size: 22px;
+    margin-bottom: 0.5em;
+}
+
+.standout p{
+    max-width: 420px;
+    line-height: 1.5;
+}
+
+
 
 
 /* OM OS SEKTIONEN */
