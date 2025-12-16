@@ -316,13 +316,14 @@ input[type="radio"] {
 
 .juletilbud h1, h2{
     font-family: "rylan", sans-serif;
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 0.5em;
 }
 
 .standout p{
     max-width: 420px;
     line-height: 1.5;
+    font-size: 18px;
 }
 
 
