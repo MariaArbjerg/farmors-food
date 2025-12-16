@@ -215,12 +215,33 @@ input[type="radio"] {
     position: relative;
     padding: 3em 0;
 }
-.f-vaerdiersektion img{
+
+.f-peeping{
    position: absolute;
    right: 0;
    bottom: 0;
-   height: 350px;
+   width: 40%;
+   height: auto;
+   max-width: 400px;
 }
+
+.f-streg{ /* Streg tegnede billeder */
+    height: 10em;
+    width: auto;
+}
+
+.fvaerdi{
+    text-align: center;
+    padding: 0 2em;
+    max-width: 30%;
+    margin: 2em 5em;
+}
+
+.f-vaerdiersektion p{
+    font-size: 18px;
+    line-height: 1.6;}
+
+/* JULETILBUD + EVENTS */
 
 
 /* OM OS SEKTIONEN */
@@ -228,9 +249,17 @@ input[type="radio"] {
     background-color: #F5F2EB;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 4em;
-    padding: 4rem 6rem;;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 4rem;
+}
+
+.f-omossektion-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 .h5p{
@@ -263,13 +292,6 @@ input[type="radio"] {
 
 .f-omossektion p{
     font-size: 18px;
-}
-
-.f-omossektion img{
-   width: 40%;
-   height: auto;
-   max-width: 400px;
-
 }
 /* ----------------------------- FOOTER ----------------------------- */
 
