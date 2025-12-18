@@ -244,78 +244,105 @@ input[type="radio"] {
 
 
 
-/* JULETILBUD + EVENTS */
-.standout{
-    background: #A51E23;
-    padding: 20px 0;
-    color: #FFFFFF;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
+/* Juletilbud & events */
+
+.standout {
+  background-color: #A51E23;
+  padding: 4rem 0;
+  color: #ffffff;
 }
 
-.standout > div{
-    max-width: 1100px;
-    margin: 0 auto 60px;
-    gap: 60px;
+.standout-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 3rem;
+  align-items: center;
 }
 
-.standout img{
-    width: 30rem;
-    height: auto;
-    border-radius: 20px;
+.juletilbud h1,
+.events-tekst h2 {
+  font-family: "rylan", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 30px;
 }
 
-.eventbillede{
-    grid-column: 1;
-    grid-row: 2;
-    place-self: center;
+.juletilbud p,
+.events-tekst p,
+.events-tekst li {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-.juletilbudbillede{
-    grid-column: 2;
-    grid-row: 1;
-    place-self: center;
+.juletilbudbillede,
+.eventbillede {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  justify-self: center;
 }
 
-.standout a{
-    text-decoration: none;
-    color: #A51E23;
-    background-color: #F5F2EB;
-    font-size: 20px;
-    border-radius: 40px;
-    padding: 0.7em 1.5em;
-    font-weight: 600;
+.juletilbud {
+  grid-column: 1;
+  grid-row: 1;
 }
 
-.f-events-tekst a, .juletilbud a{
-    margin-top: 2rem;
-    display: inline-block;
+.juletilbudbillede {
+  grid-column: 2;
+  grid-row: 1;
 }
 
-.lastp{
-    padding-top: 2rem;
+.eventbillede {
+  grid-column: 1;
+  grid-row: 2;
 }
 
-.standout a:hover{
-    background-color: #949494;
-    color: black;
-    transition: 0.3s;
+.events-tekst {
+  grid-column: 2;
+  grid-row: 2;
 }
 
-.juletilbud h1, h2{
-    font-family: "rylan", sans-serif;
-    font-size: 25px;
-    margin-bottom: 0.5em;
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #F5F2EB;
+  color: #A51E23;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 40px;
+  transition: 0.3s;
 }
 
-.standout p{
-    max-width: 420px;
-    line-height: 1.5;
-    font-size: 18px;
+.btn:hover {
+  background-color: #949494;
+  color: #000;
 }
 
+/* Mobil version */
+
+@media (max-width: 900px) {
+  .standout-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .juletilbudbillede,
+  .eventbillede {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .events-tekst ul {
+    list-style-position: inside;
+    padding: 0;
+  }
+}
 /** Psst... */
 
 .pst-header{
@@ -415,7 +442,7 @@ input[type="radio"] {
 
 /* RESPONSIVT! */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .kundekort-wrapper {
     flex-direction: column;
     align-items: center;
@@ -474,14 +501,6 @@ input[type="radio"] {
     font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
 /* ----------------------------- FOOTER ----------------------------- */
 
 footer{
@@ -490,7 +509,6 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
     font-size: 18px;
-    padding-top: 5em;
 }
 
 footer h6{
@@ -587,9 +605,4 @@ footer a{
     font-size: 20px;
     padding: 0.7em;
     grid-column: 1 / span4;
-}
-
-.footerbottom img{
-    height: auto;
-    width: 10em;
 }
