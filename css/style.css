@@ -60,9 +60,9 @@ nav a {
 }
 
 nav img{
-    width: auto;
-    height: 60px;
-    margin: 1em;
+    width: 15em;
+    height: auto;
+    object-fit: cover;
 }
 
 .headerkurv{
@@ -181,7 +181,6 @@ input[type="radio"] {
     font-weight: 500;
     color: black;
     cursor: pointer;
-    
 }
 
 .box a:hover{
@@ -219,15 +218,6 @@ input[type="radio"] {
     padding: 3em 0;
 }
 
-.f-peeping{
-   position: absolute;
-   right: 0;
-   bottom: 13rem;
-   width: 40%;
-   height: auto;
-   max-width: 200px;
-}
-
 .f-streg{ /* Streg tegnede billeder */
     height: 8em;
     width: auto;
@@ -260,7 +250,7 @@ input[type="radio"] {
     padding: 20px 0;
     color: #FFFFFF;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
     align-items: center;
 }
@@ -286,7 +276,7 @@ input[type="radio"] {
 .juletilbudbillede{
     grid-column: 2;
     grid-row: 1;
-    place-self: left;
+    place-self: center;
 }
 
 .standout a{
@@ -326,6 +316,39 @@ input[type="radio"] {
     font-size: 18px;
 }
 
+/** Psst... */
+
+.pst-header{
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+}
+
+.pst{
+    background-color: #F3E2DE;
+    padding: 3em;
+    padding-bottom: 4em;
+    text-align: left;
+}
+.pst h3{
+    font-family: "rylan", sans-serif;
+    font-size: 40px;
+    color: #A51E23;
+    margin: 0;
+}
+
+.h3tekst{
+    font-family: "rylan", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: black;
+}
+
+.pst p{
+    font-size: 18px;
+    line-height: 0.6;
+    margin-top: 1em;
+}
 
 
 
@@ -378,6 +401,15 @@ input[type="radio"] {
 .f-omossektion p{
     font-size: 18px;
 }
+
+
+
+
+
+
+
+
+
 /* ----------------------------- FOOTER ----------------------------- */
 
 footer{
@@ -483,4 +515,9 @@ footer a{
     font-size: 20px;
     padding: 0.7em;
     grid-column: 1 / span4;
+}
+
+.footerbottom img{
+    height: auto;
+    width: 10em;
 }
