@@ -95,7 +95,7 @@ nav img{
 .menusektion{
     margin: 0 auto;
     padding-top: 3rem;
-    padding-bottom: 7rem;
+    padding-bottom: 4rem;
     padding-right: 3rem;
     padding-left: 3rem;
     background-color: #F5F2EB;
@@ -215,7 +215,7 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 3em 0;
+    padding: 1em 0;
 }
 
 .f-streg{ /* Streg tegnede billeder */
@@ -343,6 +343,8 @@ input[type="radio"] {
     padding: 0;
   }
 }
+
+
 /** Psst... */
 
 .pst-header{
@@ -499,6 +501,11 @@ input[type="radio"] {
 
 .f-omossektion p{
     font-size: 18px;
+}
+
+.f-omossektion-inner img{
+    width: auto;
+    height: 20rem;
 }
 
 /* ----------------------------- FOOTER ----------------------------- */
