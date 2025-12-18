@@ -352,58 +352,74 @@ input[type="radio"] {
 
 
 /* Kunderne siger sektionen */
-.f-kundernesiger{
-    background-color: #F5F2EB;
-    padding: 4rem 2rem;
-    text-align: center;
+
+.f-kundernesiger {
+  background-color: #F5F2EB;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-.f-kundernesiger h4{
-    font-family: "rylan", sans-serif;
-    font-size: 30px;
-    margin-bottom: 2rem;
+.f-kundernesiger h4 {
+  font-family: "rylan", sans-serif;
+  font-size: 32px;
+  margin-bottom: 3rem;
 }
 
-.kundekort-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+.kundekort-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
 }
 
-.kundekort{
-    background-color: #f0caca;
-    width: 320px;
-    padding: 2.5rem 2rem 3rem;
-    border-radius: 2rem;
-    text-align: left;
+.kundekort {
+  background-color: #F0CACA;
+  width: 300px;
+  padding: 2.5rem 2rem 3rem;
+  border-radius: 2rem;
+  text-align: left;
+
 }
 
-.kundekort img{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-    overflow: hidden;
-    margin-bottom: 1rem;
+.kundekort-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
 }
 
-.kundekort h5{
-    font-size: 18px;
-    margin: 0;
+.kundetekst h5 {
+  margin: 0;
+  font-size: 18px;
 }
 
-.kundekort span{
-    display: block;
-    font-size: 14px;
-    color: #555555;
-    margin-bottom: 1rem;
+.kundetekst span {
+  display: block;
+  font-size: 14px;
+  color: #555;
 }
 
-.kundekort p{
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
+.kundekort img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.kundekort p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVT! */
+
+@media (max-width: 900px) {
+  .kundekort-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
