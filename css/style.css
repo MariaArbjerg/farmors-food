@@ -12,9 +12,8 @@
 }
 
 
-/*------------------------------ HEADER ------------------------------*/
 
-/* ---------------- BURGER ---------------- */
+/* ---------------- BURGER MENU ---------------- */
 .burger {
   display: none;
   background: none;
@@ -22,6 +21,8 @@
   font-size: 26px;
   cursor: pointer;
 }
+
+/*------------------------------ HEADER ------------------------------*/
 
 .h1, h2, h3, h4, h5, h6{
     font-family: "rylan", sans-serif;
@@ -333,26 +334,6 @@ input[type="radio"] {
   color: #000;
 }
 
-/* Mobil version */
-
-@media (max-width: 900px) {
-  .standout-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .juletilbudbillede,
-  .eventbillede {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  .events-tekst ul {
-    list-style-position: inside;
-    padding: 0;
-  }
-}
-
 
 /** Psst... */
 
@@ -453,14 +434,6 @@ input[type="radio"] {
 
 /* RESPONSIVT! */
 
-@media (max-width: 1000px) {
-  .kundekort-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-
 
 /* OM OS SEKTIONEN */
 .f-omossektion{
@@ -512,9 +485,9 @@ input[type="radio"] {
     font-size: 18px;
 }
 
-.f-omossektion-inner img{
+.f-omossektion img{
     width: auto;
-    height: 2rem;
+    height: 20rem;
 }
 
 /* ----------------------------- FOOTER ----------------------------- */
@@ -626,10 +599,12 @@ footer a{
 
 
 
-/* ---------------- MOBIL MENU ---------------- */
-@media (max-width: 940px) {
+/* ---------------- MEDIA QUERY ---------------- */
 
-  /* Vis burger */
+@media (max-width: 768px) { /* Tablet og ned */
+
+  /* HEADER */
+  /* Vis burgermenuen */
   .burger {
     display: block;
   }
@@ -640,7 +615,6 @@ footer a{
     flex-direction: column;
     gap: 1.5rem;
     background-color: #F5F2EB;
-
     position: absolute;
     top: 100%;
     left: 0;
@@ -659,4 +633,46 @@ footer a{
   nav {
     position: relative;
   }
+
+
+/* Juletilbud & events */
+  .standout-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .juletilbud{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .juletilbudbillede {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .eventbillede {
+    grid-column: 1;
+    grid-row: 3;
+  } 
+
+  .events-tekst {
+    grid-column: 1;
+    grid-row: 4;
+    text-align: left;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+
+
+  /* Anmeldelser */
+  .kundekort-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
