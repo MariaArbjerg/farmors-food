@@ -677,6 +677,85 @@ footer a{
   }
 
 
+  /* MENU SLIDER SEKTIONEN */
+
+  .menuslider { 
+    display: none;
+  }
+
+  .menutabs{
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .menutabs label{
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 999px;
+  }
+
+  .seflereknap {
+    font-size: 0.9rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+  }
+
+
+  #polse:checked ~ .menucontent .polse,
+  #suppe:checked ~ .menucontent .suppe,
+  #tilbehor:checked ~ .menucontent .tilbehor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .box { margin: 0; }
+
+  .box img {
+    height: 120px;
+    width: auto;
+    border-radius: 12px;
+  }
+
+  .box p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+
+
+
+
+
+  /* Værdi sektionen */
+  .f-vaerdiersektion {
+    padding: 0.5rem 0;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Hver værdi */
+  .fvaerdi {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .f-streg {
+    height: 4.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .f-vaerdiersektion p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+
+
 /* Juletilbud & events */
   .standout-container {
     grid-template-columns: 1fr;
