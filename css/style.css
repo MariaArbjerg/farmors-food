@@ -20,6 +20,8 @@
   border: none;
   font-size: 26px;
   cursor: pointer;
+  justify-self: end;
+  margin-left: 0.5rem;
 }
 
 /*------------------------------ HEADER ------------------------------*/
@@ -34,10 +36,12 @@ header{
 }
 
 nav{
-    padding: 0em 2em;
+    padding: 0em 1em;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 nav ul {
@@ -70,15 +74,18 @@ nav a {
 }
 
 nav img{
-    width: 15em;
+    width: 110px;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
+    justify-self: start;
 }
 
 .headerkurv{
     font-size: 30px;
     color: #000000;
     padding: 1em;
+    justify-self: end;
+    margin-left: 0.5rem;
 }
 
 .headerkurv:hover{
@@ -471,7 +478,7 @@ input[type="radio"] {
     text-decoration: none;
     color: #000000;
     background-color: #d9d9d9;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 40px;
     padding: 0.5em 1em;
 }
@@ -491,6 +498,10 @@ input[type="radio"] {
     overflow: hidden;
     object-fit: cover;
 }
+
+
+
+
 
 /* ----------------------------- FOOTER ----------------------------- */
 
@@ -639,6 +650,14 @@ footer a{
     text-align: left;
   }
 
+  .f-omossektion a{
+    font-size: 16px;
+  }
+
+  .f-omossektion{
+    padding: 1em;
+  }
+
 }
 
 
@@ -775,6 +794,17 @@ footer a{
     grid-row: 2;
   }
 
+  .juletilbud h1, .events-tekst h2 {
+  font-family: "rylan", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  }
+
+.juletilbud p, .events-tekst p, .events-tekst li {
+  font-size: 15px;
+  line-height: 1.5;
+  }
+
   .eventbillede {
     grid-column: 1;
     grid-row: 3;
@@ -840,11 +870,15 @@ footer a{
 /* FOOTER */
   
 .footer-logo{
-  width: 500px;
-  max-width: none;
-  margin: 0.5rem auto 1.5rem;
-  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto 1rem;
   padding: 0;
+  grid-column: unset;
+  grid-row: unset;
+  place-self: unset;
+
 }
 
   footer {
