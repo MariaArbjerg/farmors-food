@@ -659,6 +659,10 @@ footer a{
     text-align: left;
   }
 
+  .h5p p{
+    font-size: 15px;
+  }
+
   .f-omossektion a{
     font-size: 16px;
   }
@@ -680,6 +684,27 @@ footer a{
     display: block;
   }
 
+  .burger-search{
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #949494;
+  }
+
+  .burger-search input{
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    outline: none;
+  }
+
+  .burger-search input:focus{
+    border-color: #A51E23;
+    box-shadow: 0 0 5px rgba(165, 30, 35, 0.5);
+  }
+
+
   /* Skjul menu som udgangspunkt */
   nav ul {
     display: none;
@@ -690,8 +715,8 @@ footer a{
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 2rem 0;
-    text-align: center;
+    padding: 2rem 1.5rem 1.5 rem;
+    text-align: left;
     z-index: 100;
   }
 
@@ -700,9 +725,22 @@ footer a{
     display: flex;
   }
 
+  nav ul li a{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    display: block;
+  }
+
   nav {
     position: relative;
   }
+
+
+
+
+
+
 
 
   /* MENU SLIDER SEKTIONEN */
@@ -832,6 +870,9 @@ footer a{
 
 
 
+
+
+
    /*PSST... sektionen */
     .pst-header{
         flex-direction: column;
@@ -860,6 +901,15 @@ footer a{
   .kundekort-wrapper {
     flex-direction: column;
     align-items: center;
+  }
+
+  .f-kundernesiger h4 {
+  font-size: 22px;
+  margin-bottom: 1em;
+  }
+
+  .kundekort-header {
+  margin-bottom: 0.5rem;
   }
 
   /* Om os sektionen */
@@ -898,6 +948,11 @@ footer a{
 
 
 
+
+
+
+
+  
 /* FOOTER */
   
 .footer-logo{
