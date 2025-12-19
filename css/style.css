@@ -24,6 +24,47 @@
   margin-left: 0.5rem;
 }
 
+/*--------------- SØGEFELT ---------------*/
+
+.search-wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-toggle{
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #000;
+}
+
+.search-input{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(50%);
+  width: 0;
+  opacity: 0;
+  padding: 0.5rem 0;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  transition: width 0.25s ease, opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.search-wrapper.active .search-input{
+  width: 220px;
+  opacity: 1;
+  padding: 0.5rem 1rem;
+  pointer-events: auto;
+}
+
+
+
+
 /*------------------------------ HEADER ------------------------------*/
 
 .h1, h2, h3, h4, h5, h6{
@@ -704,6 +745,9 @@ footer a{
     box-shadow: 0 0 5px rgba(165, 30, 35, 0.5);
   }
 
+  .search-wrapper{
+    display: none;
+  }
 
   /* Skjul menu som udgangspunkt */
   nav ul {
@@ -715,9 +759,10 @@ footer a{
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 2rem 1.5rem 1.5 rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
     text-align: left;
     z-index: 100;
+    
   }
 
   /* Når burger er aktiv */
