@@ -365,7 +365,7 @@ input[type="radio"] {
 
 .pst p{
     font-size: 18px;
-    line-height: 0.6;
+    line-height: 1.5;
     margin-top: 1em;
 }
 
@@ -432,8 +432,6 @@ input[type="radio"] {
   line-height: 1.5;
 }
 
-/* RESPONSIVT! */
-
 
 /* OM OS SEKTIONEN */
 .f-omossektion{
@@ -443,6 +441,8 @@ input[type="radio"] {
     justify-content: flex-start;
     gap: 1rem;
     padding: 4rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .f-omossektion-inner{
@@ -454,7 +454,7 @@ input[type="radio"] {
 }
 
 .h5p{
-    width: 50%;
+    width: 70%;
     text-align: left;
 }
 
@@ -487,7 +487,9 @@ input[type="radio"] {
 
 .f-omossektion img{
     width: auto;
-    height: 20rem;
+    height: 30rem;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 /* ----------------------------- FOOTER ----------------------------- */
@@ -601,7 +603,43 @@ footer a{
 
 /* ---------------- MEDIA QUERY ---------------- */
 
-@media (max-width: 768px) { /* Tablet og ned */
+@media (max-width: 1000px) {
+
+
+    /* OM OS SEKTIONEN */
+  .f-omossektion-inner {
+    position: relative;
+    min-height: 60vh;
+  }
+
+  /* BILLEDE – stadig til højre */
+  .f-omossektion img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  /* TEKST – stadig til venstre */
+  .h5p {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    padding: 2rem;
+    margin-left: 0;
+    text-align: left;
+  }
+
+}
+
+
+
+
+@media (max-width: 768px) { /* MOBIL */
 
   /* HEADER */
   /* Vis burgermenuen */
@@ -629,7 +667,6 @@ footer a{
     display: flex;
   }
 
-  /* Sørg for at nav er reference */
   nav {
     position: relative;
   }
@@ -667,7 +704,12 @@ footer a{
     margin: 0 auto;
   }
 
-
+   /*PSST... sektionen */
+    .pst-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
 
   /* Anmeldelser */
   .kundekort-wrapper {
@@ -675,4 +717,39 @@ footer a{
     align-items: center;
   }
 
+  /* Om os sektionen */
+  .f-omossektion {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .f-omossektion-inner {
+    position: relative;
+    min-height: 70vh;
+  }
+
+  /* BILLEDE – højre side */
+  .f-omossektion img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  /* TEKST – venstre side */
+  .h5p {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    padding: 1rem 1rem;
+    color: #000;
+    text-align: left;
+  }
+
 }
+
