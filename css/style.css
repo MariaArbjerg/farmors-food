@@ -24,47 +24,6 @@
   margin-left: 0.5rem;
 }
 
-/*--------------- SØGEFELT ---------------*/
-
-.search-wrapper{
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.search-toggle{
-  background: none;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
-  color: #000;
-}
-
-.search-input{
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(50%);
-  width: 0;
-  opacity: 0;
-  padding: 0.5rem 0;
-  border-radius: 999px;
-  border: 1px solid #ccc;
-  font-size: 0.9rem;
-  transition: width 0.25s ease, opacity 0.2s ease;
-  pointer-events: none;
-}
-
-.search-wrapper.active .search-input{
-  width: 220px;
-  opacity: 1;
-  padding: 0.5rem 1rem;
-  pointer-events: auto;
-}
-
-
-
-
 /*------------------------------ HEADER ------------------------------*/
 
 .h1, h2, h3, h4, h5, h6{
@@ -109,13 +68,13 @@ nav li a:hover{
 nav a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     border-bottom: 2px solid transparent;
     transition: color 0.2s ease;
 }
 
 nav img{
-    width: 110px;
+    width: 200px;
     height: auto;
     object-fit: contain;
     justify-self: start;
@@ -725,30 +684,6 @@ footer a{
     display: block;
   }
 
-  .burger-search{
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #949494;
-  }
-
-  .burger-search input{
-    width: 100%;
-    padding: 0.7rem 1rem;
-    border-radius: 999px;
-    border: 1px solid #ccc;
-    font-size: 0.95rem;
-    outline: none;
-  }
-
-  .burger-search input:focus{
-    border-color: #A51E23;
-    box-shadow: 0 0 5px rgba(165, 30, 35, 0.5);
-  }
-
-  .search-wrapper{
-    display: none;
-  }
-
   /* Skjul menu som udgangspunkt */
   nav ul {
     display: none;
@@ -895,7 +830,7 @@ footer a{
   font-size: 20px;
   }
 
-.juletilbud p, .events-tekst p, .events-tekst li {
+  .juletilbud p, .events-tekst p, .events-tekst li {
   font-size: 15px;
   line-height: 1.5;
   }
@@ -929,13 +864,13 @@ footer a{
     font-size: 30px;
   }
 
-.h3tekst{
+  .h3tekst{
     font-size: 16px;
-}
+  }
 
-.pst p{
+  .pst p{
     font-size: 14px;
-}
+  }
 
 
 
