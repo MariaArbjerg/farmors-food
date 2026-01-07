@@ -718,7 +718,26 @@ footer a{
 
   nav {
     position: relative;
+    grid-template-columns: auto 1fr auto auto;
+    padding: 0 0.75rem; 
   }
+
+  nav img{
+    width: 140px; /* var 200px */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .headerkurv{
+    padding: 0.5rem;
+    margin-left: 0;
+    font-size: 26px;
+  }
+
+  .burger{
+    margin-left: 0;
+  }
+
 
 
 
