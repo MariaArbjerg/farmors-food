@@ -22,6 +22,8 @@
   cursor: pointer;
   justify-self: end;
   margin-left: 0.5rem;
+  color: #000000;
+  outline: none;
 }
 
 /*------------------------------ HEADER ------------------------------*/
@@ -686,6 +688,7 @@ footer a{
   /* Vis burgermenuen */
   .burger {
     display: block;
+    margin-left: 0;
   }
 
   /* Skjul menu som udgangspunkt */
@@ -732,10 +735,6 @@ footer a{
     padding: 0.5rem;
     margin-left: 0;
     font-size: 26px;
-  }
-
-  .burger{
-    margin-left: 0;
   }
 
 
